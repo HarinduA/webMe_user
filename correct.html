@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Input</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">    
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+
+</style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <!-- Row 1 -->
+        <div class="cell"></div>
+        <div class="cell">USER PROFILE</div>
+        <div class="cell"></div>
+        <!-- Row 2 -->
+        <div class="cell"></div>
+        <div class="cell"><button id="startBtn">START</button></div>
+        <div class="cell"></div>
+        <!-- Row 3 -->
+        <div class="cell"></div>
+        <div class="cellmodal">
+            <div id="myModel" class="modal-content " style="display: none;">
+                <div class="cellmodal"><p id="modalPrompt1">step</p></div>
+                <div><p id="modalPrompt" >Enter your detail:</p></div>
+                <input type="text" id="userInput">
+            </div>
+        </div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell">
+            <div id="myModelButtns" class="modal-content " style="display: none;">                
+                <button id="nextBtn">NEXT</button>
+                <button id="skipBtn">SKIP</button>
+            </div>
+        </div>
+        <div class="cell"></div>
+
+        <!-- Row 4 -->
+        <div class="cell"></div>
+        <div class="cell"><div class="cell"  style="display: none;" id="progressPercentage"></div></div>
+        <div class="cell"></div>
+        <!-- Row 5 -->
+        <div class="cell"></div>
+        <div class="cell special-align"><div class="progress-bar-inner" id="progressBar"></div></div> <!-- Special alignment -->
+        <div class="cell"></div>
+        <!-- Row 6 -->
+        <div class="cell"></div>
+        <div class="cell special-align"><div class="input-box" id="userInfoDisplay">
+            <!-- User info will be displayed here -->
+        </div></div> <!-- Special alignment -->
+        <div class="cell"></div>
+        <!-- Row 7 -->
+        <div class="cell"></div>
+        <div class="cell" >
+            <div id="aboutmeBtn" style="text-align: center; margin-top: 10px; display: none;" >
+                <a href="https://www.iit.ac.lk/" style="padding: 10px 20px; font-size: 0.5em; font-weight: bold; background-color: #28a0d7; color: #fff; text-decoration: none; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;"
+                >ABOUT ME</a>
+            </div>
+        </div>
+        <div class="cell"></div>
+    </div>
+
+    
+    <!-- JavaScript -->
+    <script src="script4.js"></script>
+</body>
+</html>

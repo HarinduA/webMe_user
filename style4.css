@@ -1,0 +1,125 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#userInfoDisplay p {
+line-height: 0.5; /* Adjusted for better readability */
+}
+
+.table {
+    display: table;
+    width: 1000px; 
+    border-collapse: collapse;
+}
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: flex; /* Makes it a flex container, useful for aligning internal content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-color: white;    
+    min-width: 200px; /* Minimum width for each cell */
+    flex: 1; /* Allows cells to grow equally */
+}
+
+.highlighted {
+    background-color:white; 
+}
+.highlighted1 {
+    background-color: rgb(255, 252, 252); 
+    height: 250px;
+}
+
+.progress-bar {
+        width: 100%;
+        background-color: #808080;
+        border-radius: 3px;
+        margin-bottom: 20px;
+}
+
+.progress-bar-inner {
+        /*position: absolute;*/
+        bottom: 0;
+        left: 0;
+        height: 20px;
+        background-color: #12e97d;
+        width: 0%; /* Initial width */
+        border-radius: 5px;
+        transition: width 0.5s ease;
+}
+
+.highlighted2{
+    background-color:rgb(255, 255, 255); 
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+gap: 10px; /* Adjust the space between rows and columns */
+max-width: 1500px; /* Adjust based on your preference */
+margin: auto; /* Center the grid horizontally */
+background-color: #ffff;
+}
+
+.cell {
+display: flex;
+justify-content: center; /* Center content horizontally */
+align-items: center; /* Center content vertically */
+padding: 0px; /* Adjust based on your preference */
+background-color: #ffffff; /* Just for visual differentiation, can be removed */
+border: 0px solid #ddd; /* Just for visual differentiation, can be removed */
+}
+
+.cellmodal {
+display: flex; /* Use Flexbox */
+flex-direction: column; /* Stack children vertically; remove this line if horizontal layout is preferred */
+justify-content: center; /* Center vertically in the container */
+align-items: center; /* Center horizontally in the container */
+padding: 0px;
+background-color: #b3bdbe;
+border: 0px solid #ddd;    
+}
+
+
+.special-align {
+justify-content: flex-start; /* Left-align content for specific cells */
+}
+
+button {
+padding: 10px 20px;
+font-size: 12px; /* Adjust as needed */
+font-weight: bold;
+background-color: #28a0d7;
+color: #fff;
+text-decoration: none;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #1a6f97; /* Darker shade for hover effect */
+}
+
+input[type="text"] {
+padding: 10px;
+font-size: 16px; /* Adjust as needed */
+border: 2px solid #ddd; /* Light grey border */
+border-radius: 5px;
+margin: 5px 0; /* Spacing around input boxes */
+width: calc(100% - 50px); /* Adjust width as necessary, accounting for padding */
+}
+
+input[type="text"]:focus {
+border-color: #28a0d7; /* Highlight input box with theme color when focused */
+}
